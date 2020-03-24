@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+p{
+    line-height: 1.4em;
+    font-size: 1.2em;
+}
+h2{
+    text-align: center;
+    font-size: 2.4em;
+    font-weight: bolder;
+    padding-bottom: 30px;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+body{
+    background-image: url(../images/coffee-background.jpg);
+    background-size: cover;
+}
+header h1{
+    text-align: center;
+    font-size: 5em;
+    color: #ffffffea;
+    font-weight: bold;
+    text-shadow: 6px 6px 6px black;
+}
+nav{
+    display: block;
+    padding-bottom: 20px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+}
+nav a{
+
+    font-size: 3em;
+    color: #ffffffea; 
+    text-shadow: 6px 6px 6px black;
+    font-weight: bold;
+    text-decoration: none;
+    padding-right: 60px;
+}
+a:hover,
+a:focus{
+    color: green;
+}
+.space{
+    margin-bottom: 640px;
+}
+.container{
+    width: 960px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffffea;
+    display: block;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    
+}
+/* Slideshow CSS */
+
+.slideshow-container{
+    position: relative;
+    margin: auto;
+    max-width: 960px;
+    overflow: hidden;
+}
+
+.mySlides img{
+    display: none;
+    overflow: hidden;
+}
+.mySlides img.active{
+    display: inline-block;
+    overflow: hidden;
+    
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 300px;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+}
+.next{
+    right: 0;
+    z-index: 100;
+}
+.prev {
+    left: 0;
+    z-index: 100;
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-top: -500px;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+/* Menu Tables */
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+table{
+ 
+    font-size: 2em;
+    
+}
+th{
+    padding-left: 80px;
+}
+td{
+    padding-top: 20px;
+    padding-right: 12px;
+    border-bottom: black  dotted 1px;
+}
+tr:hover{
+    background-color: #e6e4e4;
+}
+/* Contact Us Form */
+label{
+   display: block;
+   padding-bottom: 2px;
+   font-size: 1.2em;
+   
+    
+}
+input[type=text]{
+    margin-bottom: 20px;
+    
+}
+
+input[type=submit]{
+    background-color: green;
+    color: #ffffffea;
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    resize: vertical;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+input[type=submit]:hover{
+    background-color: #0cac0c;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.container-contact{
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffffea;
+    position: relative;
+}
+.container2{
+    width: 220px;
+    background-color: rgba(0, 128, 0, 0.616);
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    top: 110px;
+    left: 260px;
+    color: white;
+}
+
+.bold{
+    font-weight: bolder;
+}
+footer{
+    padding-top: 20px;
+    color: #ffffffea;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: lightblue;
+}
