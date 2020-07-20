@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="scripts/slideshow.js"></script>
+    <script defer src="scripts/googleMapsApi.js"></script>
     <title>Cafe Saigon|Contact Us</title>
 </head>
 <body>
     <header>
         <h1>Cafe Saigon</h1>
+        
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -17,7 +20,9 @@
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
+        
     </header>
+    
     <main class="container-contact">
         <h2>Contact Form</h2>
    
@@ -40,6 +45,7 @@
                 
                 <input type="submit" value="Submit">
             </form>
+            
         <div class="container2">
             
             <p class="bold">Store Information </p><p> (778) 999-9999 <br>
@@ -48,15 +54,18 @@
         </div>
   
     </main>  
-
+    <div id="map"></div>
 
 <footer>
     <p>&copy;Cafe Saigon</p>
     <a href="credits.html">Project Credits</a>
     <address>
         123 Main Street <br>
-        Vancouver, BC <br>
+        Richmond, BC <br>
     </address>
 </footer>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-WLAxY6TVmCxuJtZUBoNZVxA8CZyYKPc&callback=initMap">
+</script>
 </body>
 </html>
